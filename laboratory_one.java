@@ -3,6 +3,28 @@ public class Laboratory_one {
     max -= min;
     return ((float)Math.random() * max) + min;
   }
+  
+  public static double convert(int z_, float x_, int[] numbers_) {
+      if (z_ == 2) {
+          return Math.cos(Math.asin(Math.cos(x_)));
+      } else {
+          for (int coin : numbers_) {
+              if (z_ == coin) {
+                  return Math.tan((Math.tan(x_) + 1) / Math.cbrt(x_));
+              }
+          }
+          return Math.asin(Math.exp(Math.cbrt(-1 * Math.exp(Math.pow(Math.cbrt(x_), (0.75 - Math.log(Math.abs(x_))) / 3.0)))));
+      }
+  }
+  
+  public static void print(double[][] numb) {
+      for (int i = 0; i < 11; i++) {
+        for (int j = 0; j < 11; j++) {
+            System.out.printf("%.2f ", numb[i][j]);
+        }
+        System.out.println();
+    }
+  }
 
   public static void main(String[] args) {
     int[] z = new int[11];
@@ -21,29 +43,10 @@ public class Laboratory_one {
 
     for (int i = 0; i < 11; i++) {
         for (int j = 0; j < 11; j++) {
-            if (z[i] == 2) {
-                z1[i][j] = Math.cos(Math.asin(Math.cos(x[j])));
-            } else {
-                for (int coin : numbers) {
-                    if (z[i] == coin) {
-                        z1[i][j] = Math.tan((Math.tan(x[j]) + 1) / Math.cbrt(x[j]));
-                        flag = 1;
-                        break;
-                    }
-                }
-                if (flag == 0) {
-                    z1[i][j] = Math.asin(Math.exp(Math.cbrt(-1 * Math.exp(Math.pow(Math.cbrt(x[j]), (0.75 - Math.log(Math.abs(x[j]))) / 3.0)))));
-                }
-            }
+            z1[i][j] = convert(z[i], x[j], numbers);
         }
     }
 
-    for (int i = 0; i < 11; i++) {
-        for (int j = 0; j < 11; j++) {
-            System.out.printf("%.2f", z1[i][j]);
-            System.out.print(' ');
-        }
-        System.out.println();
-    }
+    print(z1);
   }
 }
