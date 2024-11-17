@@ -1,0 +1,102 @@
+@startuml
+class mymoves.blissey.SoftBoiled {
+- int health
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+
+
+class lab2.Program {
++ {static} void main(String[])
++ {static} boolean chance(double)
+}
+
+class mymoves.eevee.WorkUp {
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+
+class mymoves.flareon.ScaryFace {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+
+class mypokemons.Eevee {
+}
+class mymoves.komala.ShellSmash {
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+
+class mypokemons.Chansey {
+}
+class mymoves.chansey.SeismicToss {
+# void applyOppEffects(Pokemon)
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+
+class mypokemons.Blissey {
+}
+class mymoves.eevee.Tackle {
+# String describe()
+}
+
+class mypokemons.Flareon {
+}
+class mymoves.SampleMove {
+# void applyOppEffects(Pokemon)
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+
+class mymoves.komala.RockSlide {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+
+class mymoves.komala.ConfuseRay {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+
+class mymoves.happiny.Psychic {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+
+class mypokemons.Happiny {
+}
+class mymoves.komala.Swift {
+# void applySelfEffects(Pokemon)
+# String describe()
+}
+
+class mypokemons.Komala {
+}
+class mymoves.eevee.Confide {
+# void applyOppEffects(Pokemon)
+# String describe()
+}
+
+
+
+ru.ifmo.se.pokemon.StatusMove <|-- mymoves.blissey.SoftBoiled
+ru.ifmo.se.pokemon.StatusMove <|-- mymoves.eevee.WorkUp
+ru.ifmo.se.pokemon.StatusMove <|-- mymoves.flareon.ScaryFace
+ru.ifmo.se.pokemon.Pokemon <|-- mypokemons.Eevee
+ru.ifmo.se.pokemon.StatusMove <|-- mymoves.komala.ShellSmash
+ru.ifmo.se.pokemon.Pokemon <|-- mypokemons.Chansey
+ru.ifmo.se.pokemon.PhysicalMove <|-- mymoves.chansey.SeismicToss
+ru.ifmo.se.pokemon.Pokemon <|-- mypokemons.Blissey
+ru.ifmo.se.pokemon.PhysicalMove <|-- mymoves.eevee.Tackle
+ru.ifmo.se.pokemon.Pokemon <|-- mypokemons.Flareon
+ru.ifmo.se.pokemon.PhysicalMove <|-- mymoves.SampleMove
+ru.ifmo.se.pokemon.PhysicalMove <|-- mymoves.komala.RockSlide
+ru.ifmo.se.pokemon.StatusMove <|-- mymoves.komala.ConfuseRay
+ru.ifmo.se.pokemon.SpecialMove <|-- mymoves.happiny.Psychic
+ru.ifmo.se.pokemon.Pokemon <|-- mypokemons.Happiny
+ru.ifmo.se.pokemon.SpecialMove <|-- mymoves.komala.Swift
+ru.ifmo.se.pokemon.Pokemon <|-- mypokemons.Komala
+ru.ifmo.se.pokemon.StatusMove <|-- mymoves.eevee.Confide
+@enduml
