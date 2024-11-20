@@ -5,7 +5,7 @@ import mymoves.happiny.Psychic;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Happiny extends Pokemon {
+public final class Happiny extends Pokemon {
     public Happiny(String name, int level) {
         super(name, level);
 
