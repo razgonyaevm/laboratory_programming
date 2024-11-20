@@ -4,7 +4,7 @@ import ru.ifmo.se.pokemon.PhysicalMove;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class SeismicToss extends PhysicalMove {
+public final class SeismicToss extends PhysicalMove {
     public SeismicToss(double pow, double acc) {
         super(Type.FIGHTING, pow, acc);
     }
