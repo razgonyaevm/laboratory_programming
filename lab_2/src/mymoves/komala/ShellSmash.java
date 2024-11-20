@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Type;
 import ru.ifmo.se.pokemon.Stat;
 
-public class ShellSmash extends StatusMove {
+public final class ShellSmash extends StatusMove {
     public ShellSmash(double pow, double acc) {
         super(Type.NORMAL, pow, acc);
     }
