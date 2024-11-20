@@ -5,7 +5,7 @@ import ru.ifmo.se.pokemon.Stat;
 import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Type;
 
-public class SoftBoiled extends StatusMove {
+public final class SoftBoiled extends StatusMove {
     private final int health;
 
     public SoftBoiled(double pow, double acc, int health) {
