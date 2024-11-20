@@ -7,7 +7,7 @@ import mymoves.komala.Swift;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Komala extends Pokemon {
+public final class Komala extends Pokemon {
 
     public Komala(String name, int level) {
         super(name, level);
