@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.Stat;
 
-public class WorkUp extends StatusMove {
+public final class WorkUp extends StatusMove {
     public WorkUp(double pow, double acc) {
         super(Type.NORMAL, pow, acc);
     }
