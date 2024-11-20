@@ -5,7 +5,7 @@ import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.StatusMove;
 import ru.ifmo.se.pokemon.Type;
 
-public class ConfuseRay extends StatusMove {
+public final class ConfuseRay extends StatusMove {
     public ConfuseRay(double pow, double acc) {
         super(Type.GHOST, pow, acc);
     }
