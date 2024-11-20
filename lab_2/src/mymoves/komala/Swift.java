@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.SpecialMove;
 import ru.ifmo.se.pokemon.Type;
 import ru.ifmo.se.pokemon.Stat;
 
-public class Swift extends SpecialMove {
+public final class Swift extends SpecialMove {
     public Swift(double pow, double acc) {
         super(Type.NORMAL, pow, acc);
     }
