@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.Stat;
 
-public class ScaryFace extends StatusMove {
+public final class ScaryFace extends StatusMove {
     public ScaryFace(double pow, double acc) {
         super(Type.NORMAL, pow, acc);
     }
