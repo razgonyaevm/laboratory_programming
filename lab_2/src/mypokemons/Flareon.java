@@ -7,7 +7,7 @@ import mymoves.eevee.WorkUp;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Flareon extends Pokemon {
+public final class Flareon extends Pokemon {
     public Flareon(String name, int level) {
         super(name, level);
 
