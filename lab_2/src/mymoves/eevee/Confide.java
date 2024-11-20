@@ -6,7 +6,7 @@ import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Effect;
 import ru.ifmo.se.pokemon.Stat;
 
-public class Confide extends StatusMove {
+public final class Confide extends StatusMove {
     public Confide(double pow, double acc) {
         super(Type.NORMAL, pow, acc);
     }
