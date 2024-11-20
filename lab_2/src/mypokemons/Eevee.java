@@ -6,7 +6,7 @@ import mymoves.eevee.WorkUp;
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
-public class Eevee extends Pokemon {
+public final class Eevee extends Pokemon {
     public Eevee(String name, int level) {
         super(name, level);
 
