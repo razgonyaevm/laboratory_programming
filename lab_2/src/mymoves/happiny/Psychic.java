@@ -7,7 +7,7 @@ import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Stat;
 import ru.ifmo.se.pokemon.Effect;
 
-public class Psychic extends SpecialMove {
+public final class Psychic extends SpecialMove {
     public Psychic(double pow, double acc) {
         super(Type.PSYCHIC, pow, acc);
     }
