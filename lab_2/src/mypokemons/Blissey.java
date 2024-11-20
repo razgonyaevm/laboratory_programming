@@ -8,7 +8,7 @@ import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
 
 
-public class Blissey extends Pokemon {
+public final class Blissey extends Pokemon {
     public Blissey(String name, int level) {
         super(name, level);
 
