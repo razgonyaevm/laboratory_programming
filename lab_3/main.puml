@@ -1,0 +1,188 @@
+@startuml
+abstract class lab3.abstracts.People {
+- String name
+- Moods mood
+- Classes classes
+- ArrayList<Pair<String,People>> messages_to
+- ArrayList<Pair<String,People>> messages_from
+- ArrayList<Clothes> clothes
+- ArrayList<Cars> cars
++ {abstract}String say(String)
++ void sendMessage(String,People)
++ String getName()
++ void setName(String)
++ Moods getMood()
++ void setMood(Moods)
++ Classes getClasses()
++ void setClasses(Classes)
++ String getMessages()
++ void addMessage_to(String,People)
++ void addMessage_from(String,People)
++ void addClothes(Clothes)
++ void removeClothes(Clothes)
++ String getClothes()
++ void addCar(Cars)
++ String getCars()
++ String toString()
++ boolean equals(Object)
++ int hashCode()
+}
+
+
+class lab3.Program {
++ {static} void main(String[])
+}
+
+class lab3.peoples.Skuperfild {
++ String say(String)
+}
+
+abstract class lab3.abstracts.Cars {
+- String model
+- int cylinders
+- String color
++ {abstract}void to_people(People)
++ {abstract}People getOwner()
++ {abstract}void addPassenger(People)
++ {abstract}void removePassenger(People)
++ String getModel()
++ void setModel(String)
++ int getCylinders()
++ void setCylinders(int)
++ String getColor()
++ void setColor(String)
++ String toString()
++ boolean equals(Object)
++ int hashCode()
+}
+
+
+interface lab3.interfaces.Driving {
++ void drive()
++ void stop()
+}
+
+class lab3.peoples.God {
++ String say(String)
+}
+
+class lab3.peoples.SimplePeople {
++ String say(String)
+}
+
+class lab3.cars.ChevroletCorvette {
+- People owner
+- ArrayList<People> passengers
++ void to_people(People)
++ void drive()
++ void stop()
++ People getOwner()
++ void addPassenger(People)
++ void removePassenger(People)
++ String toString()
+}
+
+
+class lab3.peoples.Krabs {
++ String say(String)
+}
+
+enum lab3.enums.Classes {
++  JACKASS
++  FOOL
++  SIMPLE
++  SMART
++  ELIT
++  KING
++  GOD
+- String title
++ String toString()
+}
+
+
+abstract class lab3.abstracts.Clothes {
+- String model
+- String color
++ {abstract}void wear(People)
++ {abstract}void remove()
++ String getColor()
++ void setColor(String)
++ String getModel()
++ void setModel(String)
++ String toString()
++ boolean equals(Object)
++ int hashCode()
+}
+
+
+enum lab3.enums.Moods {
++  DELIGHTFUL
++  FANTASTIC
++  GREAT
++  GOOD
++  NORMAL
++  SAD
++  TERRIBLE
+- String title
++ String getTitle()
++ String toString()
+}
+
+
+class lab3.cars.AstonMartin {
+- People owner
+- ArrayList<People> passengers
++ void to_people(People)
++ void drive()
++ void stop()
++ People getOwner()
++ void addPassenger(People)
++ void removePassenger(People)
++ String toString()
+}
+
+
+class lab3.things.TallHat {
+- People owner
++ void wear(People)
++ void remove()
+}
+
+
+class lab3.things.Cloak {
+- People owner
++ void wear(People)
++ void remove()
+}
+
+
+class lab3.exceptions.RemovingException {
++ String getMessage()
+}
+
+class lab3.messenger.Mail {
++ {static} void sendMessage(People,People,String)
+}
+
+class lab3.Pair {
++ X x
++ Y y
++ X x()
++ Y y()
+}
+
+
+
+
+lab3.abstracts.People <|-- lab3.peoples.Skuperfild
+lab3.abstracts.People <|-- lab3.peoples.God
+lab3.abstracts.People <|-- lab3.peoples.SimplePeople
+lab3.interfaces.Driving <|.. lab3.cars.ChevroletCorvette
+lab3.abstracts.Cars <|-- lab3.cars.ChevroletCorvette
+lab3.abstracts.People <|-- lab3.peoples.Krabs
+lab3.interfaces.Driving <|.. lab3.cars.AstonMartin
+lab3.abstracts.Cars <|-- lab3.cars.AstonMartin
+lab3.abstracts.Clothes <|-- lab3.things.TallHat
+lab3.abstracts.Clothes <|-- lab3.things.Cloak
+lab3.exceptions.Exception <|-- lab3.exceptions.RemovingException
+@enduml
