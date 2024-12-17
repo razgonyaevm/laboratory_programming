@@ -39,6 +39,7 @@ public class Program {
         System.out.println(skuperfild);
         try {
             tallHat.remove();
+            tallHat.remove();
         }
         catch (RemovingException e) {
             System.out.println(e.getMessage());
