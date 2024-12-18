@@ -11,7 +11,7 @@ public final class God extends People {
     }
 
     @Override
-    public String say(String text) {
-        return "И молвил Бог: " + text;
+    public void say(String text) {
+        System.out.println("И молвил Бог: " + text);
     }
 }
