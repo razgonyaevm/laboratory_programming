@@ -12,7 +12,7 @@ public final class Krabs extends People {
     }
 
     @Override
-    public String say(String text) {
-        return "Крабс сказал: " + text;
+    public void say(String text) {
+        System.out.println("Крабс сказал: " + text);
     }
 }
