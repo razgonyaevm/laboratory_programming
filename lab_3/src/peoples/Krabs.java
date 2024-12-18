@@ -4,15 +4,15 @@ import lab3.abstracts.People;
 import lab3.enums.Classes;
 import lab3.enums.Moods;
 
-public final class Krabs extends People {
-    public Krabs(Moods mood, Classes classes) {
-        super.setName("Крабс");
-        super.setMood(mood);
+public final class SimplePeople extends People {
+    public SimplePeople(String name, Moods moods, Classes classes) {
+        super.setMood(moods);
         super.setClasses(classes);
+        super.setName(name);
     }
 
     @Override
     public void say(String text) {
-        System.out.println("Крабс сказал: " + text);
+        System.out.println(super.getName() + " сказал: " + text);
     }
 }
