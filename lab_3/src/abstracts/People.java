@@ -9,12 +9,13 @@ public abstract class People {
     private String name;
     private Moods mood;
     private Classes classes;
-    private ArrayList<Pair<String, People>> messages_to = new ArrayList<Pair<String, People>>();
-    private ArrayList<Pair<String, People>> messages_from = new ArrayList<Pair<String, People>>();
-    private ArrayList<Clothes> clothes = new ArrayList<Clothes>();
-    private ArrayList<Cars> cars = new ArrayList<Cars>();
+    private ArrayList<Pair<String, People>> messages_to = new ArrayList<>();
+    private ArrayList<Pair<String, People>> messages_from = new ArrayList<>();
+    private ArrayList<Clothes> clothes = new ArrayList<>();
+    private ArrayList<Cars> cars = new ArrayList<>();
 
     abstract public String say(String text);
+    
     public void sendMessage(String text, People people_to) {
         Mail mail = new Mail(this, people_to);
         mail.sendMessage(text);
