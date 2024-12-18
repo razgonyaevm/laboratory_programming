@@ -36,12 +36,13 @@ public class Program {
         astonMartin.removePassenger(skuperfild);
         astonMartin.removePassenger(simplePeople);
 
+        System.out.println(skuperfild.say("Я рад тому, что бесплатно прокатился на шикарной машине и вдобавок пообедаю на даровщинку, не говоря уже о том, что предстоит возможность обтяпать, как говорится, выгодное дельце"));
         System.out.println(skuperfild);
+        
         try {
             tallHat.remove();
             tallHat.remove();
-        }
-        catch (RemovingException e) {
+        } catch (RemovingException e) {
             System.out.println(e.getMessage());
         }
     }
