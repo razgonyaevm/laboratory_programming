@@ -14,8 +14,7 @@ public abstract class People {
     private ArrayList<Clothes> clothes = new ArrayList<>();
     private ArrayList<Cars> cars = new ArrayList<>();
 
-    abstract public String say(String text);
-    
+    abstract public void say(String text);
     public void sendMessage(String text, People people_to) {
         Mail mail = new Mail(this, people_to);
         mail.sendMessage(text);
